@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir Tarea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Añadir Tarea</h1>
+    </header>
+    <main>
+        <form id="add-task-form">
+            <input type="text" id="task-name" placeholder="Nombre de la tarea" required>
+            <textarea id="task-description" placeholder="Descripción de la tarea"></textarea>
+            <input type="date" id="task-deadline" placeholder="Fecha límite">
+            <button type="submit">Añadir Tarea</button>
+        </form>
+        <button onclick="window.location.href='index.html'">Regresar al Listado de Tareas</button>
+    </main>
+    <script src="tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Login / Registro</h1>
+    </header>
+    <main>
+        <div id="auth-container">
+            <!-- Formulario de Login -->
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            
+            <p>¿No tienes una cuenta? <a href="#" onclick="showRegisterForm()">Regístrate aquí</a></p>
+
+            <!-- Formulario de Registro -->
+            <form id="register-form" style="display: none;">
+                <input type="text" id="username" placeholder="Nombre de usuario" required>
+                <input type="email" id="register-email" placeholder="Correo electrónico" required>
+                <input type="password" id="register-password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+
+            <p><a href="#" onclick="recoverPassword()">¿Olvidaste tu contraseña?</a></p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
